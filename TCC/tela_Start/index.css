@@ -1,17 +1,67 @@
-* {
+html, body {
+    height: 100%;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
+.topo { 
+    width: 100%;
+    background-color: rgb(24, 33, 95);
+    position: absolute;
+    padding: 20px 0px 10px 0px;
+}
+
+.logo {
+    width: 50px;
+    float: left;
+    margin-left: 40px;
+}
+
+.menu {
+    float: right;
+    margin-right: 40px;
+}
+
+.menu li {
+    display: inline;
+    float: left;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-top: 3%;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 14px 16px;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: cursive;
+}
+
+.menu a:hover {
+    color: #268fd0;
+}
+
+
 body {
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+
     font-family: Arial, sans-serif;
-    background: radial-gradient(circle, #0d0f4d, #080a29);
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
     color: white;
+    
+    
 }
 
 .container {
@@ -23,12 +73,6 @@ body {
     position: relative;
 }
 
-.logo {
-    position: absolute;
-    top: 20px;
-    left: 170px;
-    width: 270px; /* Ajuste conforme necessário */
-}
 
 .content {
     text-align: left;
@@ -49,29 +93,3 @@ body {
     font-family: cursive;
 }
 
-.start-button {
-    display: inline-block;
-    padding: 15px 40px;
-    margin-top: 20px;
-    background-color: #0a63ff;
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 30px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    transition: background-color 0.3s ease;
-}
-
-.start-button:hover {
-    background-color: #0955cc;
-}
-
-
-body {
-    background: url('background.png') no-repeat center center fixed;
-    background-size: cover;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    
-}
