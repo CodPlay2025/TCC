@@ -1,0 +1,14 @@
+body {
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 2px;
+    width: 190px; /* Ajuste conforme necessário */
+}
