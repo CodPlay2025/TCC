@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="index.css">
     </head>
 
+
     <body>
         <div class="topo">
 
@@ -14,6 +15,8 @@
                 <img src="LOGO.png">
             </div>
 
+
+            <!-- rodapé -->
             <div class="menu">
                 <ul>
                     <li><a href="../tela_login/index.html">Login</a></li>
@@ -23,29 +26,39 @@
             </div>
         </div>
 
-
-
-
-         <div class="container">
-
-                <h1>CODPLAY 360°</h1>
-
+        <!-- conteudo central  -->
+        <div class="container">
+            <h1>CODPLAY 360°</h1>
             <p>Desafie-se, domine novas habilidades e teste seus conhecimentos de forma dinâmica e divertida!!</p>
-            
-            <img src="astronauta.gif" class="gif-nave" alt="Nave animada">
-
+        
+            <div class="carrossel">
+                <img class="slide" src="logica.png" alt="Imagem 1">
+                <img class="slide" src="quiz.png" alt="Imagem 2">
+                <img class="slide" src="digitacao.png" alt="Imagem 3">
             </div>
-
-
-            
-
-
-
-
-
-       
-
-
-    
+        </div>
+        
+        
     </body>
+
+
+
+    <!-- script carrossel -->
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+    
+        function showSlide() {
+            slides.forEach((slide) => {
+                slide.classList.remove('active');
+            });
+            slideIndex = (slideIndex + 1) % slides.length;
+            slides[slideIndex].classList.add('active');
+        }
+    
+        slides[0].classList.add('active');
+        setInterval(showSlide, 3000);
+    </script>
+    
+
 </html>
